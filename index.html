@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BookShelter</title>
+</head>
+
+<body>
+    <div class="overlay-hidden overlay">
+        <div class="card-hidden info__card">
+            <!-- <div class="info__card--header">
+                <h1 class="info__card--title">Python</h1>
+                <button class="info__card--close">
+                    <img src="./images/closeBtn.png" alt="close icon" width="15" height="15">
+                </button>
+            </div>
+            <div class="info__card--center">
+                <img src="./images/delete.png" width="229" height="300" alt="book image" class="info__card--bookImage">
+                <p class="info__card--text">Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim
+                    aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo
+                    voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.</p>
+                <ul class="info__card--list">
+                    <li class="info__card--item">
+                        <div class="info__card--item-author">Author : </div>
+                        <div class="info__card--item-authorName1">Jamal Kasper</div>
+                        <div class="info__card--item-authorName2">Author 2</div>
+                    </li>
+                    <li class="info__card--item">
+                        <div class="info__card--item-published">Published : </div>
+                        <div class="info__card--item-year">2019</div>
+                    </li>
+                    <li class="info__card--item">
+                        <div class="info__card--item-publishers">Publishers: </div>
+                        <div class="info__card--item-publishersName">Hollman</div>
+                    </li>
+                    <li class="info__card--item">
+                        <div class="info__card--item-categories">Categories: </div>
+                        <div class="info__card--item-category">Computers</div>
+                    </li>
+                    <li class="info__card--item">
+                        <div class="info__card--item-pages">Pages Count:</div>
+                        <div class="info__card--item-page">346</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info__card--footer">
+                <a href="#" class="read__card">Read</a>
+            </div> -->
+
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="./index.html" class="header__logo--link">
+                    <img class="header__logo-img" src="./images/logo.svg" alt="Web site logo">
+                </a>
+                <input class="header__left--input" type="search" placeholder="Search books">
+                <img class="header__search--img" src="./images/search-icon.png" alt="search-icon">
+            </div>
+            <div class="header__right">
+                <button class="header__color--btn">
+                            <img src="./images/color-page.png" alt="btn" class="header__page--color">
+                        </button>
+                <button class="header__logout--btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    <span class="hor__line hor__line--top"></span>
+    <section class="container result__section">
+        <div class="result__section--edit">
+            <p class="search__section--result">Showing 18 Result(s)</p>
+            <button class="search__section--sorting">
+            <img src="./images/calendar.png" alt="calendar-icon" class="search__section--sorting-img">
+            Order by newest
+        </button>
+        </div>
+    </section>
+    <span class="hor__line hor__line--top--bottom"></span>
+    <main class="container main">
+        <main class="main__left">
+            <div class="main__left--headding">Bookmarks</div>
+            <div class="main__left--text">If you don't like to read, you haven't found the right book</div>
+            <ul class="main__left--list">
+                <!-- <li class="main__left--item">
+                    <div class="main__left--item-left">
+                        <div class="book__name">Python</div>
+                        <div class="book__author">David M. Beazley</div>
+                    </div>
+                    <div class="main__left--item-right">
+                        <button class="open__btn">
+                            <img src="./images/book-open.png" alt="book icon" class="book__info">
+                        </button>
+                        <button class="delete__btn">
+                            <img src="./images/delete.png" alt="delete" class="book__delete">
+                        </button>
+                    </div>
+                </li> -->
+            </ul>
+        </main>
+        <main class="main__right">
+            <section class="books__section">
+
+            </section>
+            <div class="main__pagination">
+                <button class="left__btn">
+                    <img src="./images/left-arrow.png" alt="arrow-icon">
+                </button>
+                <button class="center__btn">
+                    ...
+                </button>
+                <button class="right__btn">
+                    <img src="./images/right-arrow.png" alt="arrow-icon">
+                </button>
+            </div>
+        </main>
+    </main>
+    <template id="select__template">
+        <li class="main__left--item">
+            <div class="main__left--item-left">
+                <div class="book__name" id="book__name">Python</div>
+                <div class="book__author">David M. Beazley</div>
+            </div>
+            <div class="main__left--item-right">
+                <button class="open__btn">
+                    <img src="./images/book-open.png" alt="book icon" class="book__info">
+                </button>
+                <button class="delete__btn">
+                    <img src="./images/delete.png" alt="delete" class="book__delete">
+                </button>
+            </div>
+        </li>
+    </template>
+    <template id="book__template">
+        <div class="books__section--item">
+            <div class="books__section--item-top">
+                <img src="./images/delete.png" alt="book photo" class="book__img">
+            </div>
+            <div class="books__section--item-center">
+                <div class="books__section--item-center-book">Python</div>
+                <div class="books__section--item-center-author">David M. Beazley 2009</div>
+            </div>
+            <div class="books__section--item-bottoms">
+                <button class="bookmark">Bookmark</button>
+                <button class="more_info">More Info</button>
+                <a target="_blank" href="#" class="read">Read</a>
+            </div>
+        </div>
+    </template>
+    <template id="card">
+                <div class="info__card--header">
+                    <h1 class="info__card--title">Python</h1>
+                    <button class="info__card--close">
+                        <img src="./images/closeBtn.png" alt="close icon" width="15" height="15" class="close__btn">
+                    </button>
+                </div>
+                <div class="info__card--center">
+                    <img src="./images/delete.png" width="229" height="300" alt="book image" class="info__card--bookImage">
+                    <p class="info__card--text">Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim
+                        aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo
+                        voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.</p>
+                    <ul class="info__card--list">
+                        <li class="info__card--item">
+                            <div class="info__card--item-author">Author : </div>
+                            <div class="info__card--item-authorName1">Jamal Kasper</div>
+                            <!-- <div class="info__card--item-authorName2">Author 2</div> -->
+                        </li>
+                        <li class="info__card--item">
+                            <div class="info__card--item-published">Published : </div>
+                            <div class="info__card--item-year">2019</div>
+                        </li>
+                        <li class="info__card--item">
+                            <div class="info__card--item-publishers">Publishers: </div>
+                            <div class="info__card--item-publishersName">Hollman</div>
+                        </li>
+                        <li class="info__card--item">
+                            <div class="info__card--item-categories">Categories: </div>
+                            <div class="info__card--item-category">Computers</div>
+                        </li>
+                        <li class="info__card--item">
+                            <div class="info__card--item-pages">Pages Count:</div>
+                            <div class="info__card--item-page">346</div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="info__card--footer">
+                    <a href="#" class="read__card">Read</a>
+                </div>
+    
+    
+    </template>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* rubik-500 - latin */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('../fonts/rubik-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v20-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* noto-sans-500 - latin */
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-sans-v27-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* noto-sans-700 - latin */
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/noto-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-sans-v27-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* END of FONTS */
+
+body {
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.header {
+    padding-top: 14px;
+    margin-bottom: 11px;
+}
+
+.container {
+    max-width: 1235px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 952px;
+    width: 100%;
+    position: relative;
+}
+
+.header__logo--link {
+    max-width: 226px;
+    max-height: 44px;
+    width: 100%;
+}
+
+.header__left--input {
+    background-color: rgba(248, 250, 253, 1);
+    max-width: 670px;
+    width: 100%;
+    height: 48px;
+    /* height: 100%; */
+    border: 1px solid rgba(227, 230, 235, 1);
+    border-radius: 30px;
+    padding-left: 48px;
+}
+
+[placeholder] {
+    font-family: Rubik;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+}
+
+.header__search--img {
+    position: absolute;
+    left: 300px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 132px;
+    width: 100%;
+}
+
+.header__color--btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logout--btn {
+    border: none;
+    max-width: 99px;
+    width: 100%;
+    height: 40px;
+    background: rgba(13, 117, 255, 1);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hor__line {
+    display: inline-block;
+    width: 100%;
+    background: rgba(227, 230, 235, 1);
+    height: 1px;
+}
+
+.hor__line--bottom {
+    margin-top: 11px;
+}
+
+.hor__line--top {
+    margin-bottom: 11px;
+}
+
+.result__section {}
+
+.result__section--edit {
+    max-width: 912px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(282px);
+}
+
+.search__section--result {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(34, 37, 49, 1);
+}
+
+.search__section--sorting {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 165px;
+    width: 100%;
+    height: 34px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 16px 7px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(166, 176, 195, 1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    align-items: start;
+    height: 1038px;
+}
+
+.main__left {
+    max-width: 243px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 25px;
+    min-height: 1038px;
+    border-right: 2px solid rgba(248, 250, 253, 1);
+}
+
+.main__left--headding {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.main__left--text {
+    max-width: 218px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.main__left--list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    max-width: 218px;
+    width: 100%;
+}
+
+.main__left--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F8FAFD;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    max-width: 218px;
+    width: 100%;
+}
+
+.main__left--item-left {
+    max-width: 125px;
+}
+
+.book__name {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.open__btn {
+    margin-right: 8px;
+}
+
+.book__author {
+    font-family: "Noto Sans";
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(117, 120, 129, 1);
+}
+
+.open__btn,
+.delete__btn {
+    border: none;
+    background: #F8FAFD;
+    cursor: pointer;
+}
+
+.books__section--item {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+.main__right {
+    width: 100%;
+    z-index: 100px;
+    min-height: 1038px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.books__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.books__section--item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    max-width: 282px;
+    width: 100%;
+    background: white;
+    border: 1px solid rgba(227, 230, 235, 1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.books__section--item:last-child {
+    margin-bottom: 0;
+}
+
+.books__section--item-top {
+    max-width: 249px;
+    width: 100%;
+    padding: 18px 24px;
+    background: rgba(248, 250, 253, 1);
+    margin-bottom: 19px;
+}
+
+.book__img {
+    width: 201px;
+    height: 202px;
+}
+
+.books__section--item-center-book {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.books__section--item-center-author {
+    /* max-width: 105px; */
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+    color: rgba(117, 120, 129, 1);
+}
+
+.books__section--item-bottoms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.bookmark {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 25px;
+    margin-right: 6px;
+    background: #FFD80D;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.more_info {
+    font-family: Rubik;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(13, 117, 255, 1);
+    background: rgba(13, 117, 255, 0.05);
+    border-radius: 4px;
+    padding: 10px 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.read {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 109px;
+    border: none;
+    color: #fff;
+    background: #75828A;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.overlay-hidden,
+.card-hidden {
+    display: none;
+}
+
+.overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.info__card {
+    position: fixed;
+    overflow: scroll;
+    right: 0;
+    max-width: 553px;
+    z-index: 2;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    transition: 2s ease;
+    transform: translateX(15px);
+}
+
+.info__card--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 33px;
+    background: rgba(248, 250, 253, 1);
+}
+
+.info__card--footer {
+    padding: 22px 33px;
+    background: rgba(248, 250, 253, 1);
+    display: flex;
+    justify-content: end;
+}
+
+.info__card--title {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.info__card--close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.info__card--center {
+    padding: 44px 33px 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__card--bookImage {
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 51px;
+}
+
+.info__card--text {
+    font-family: Rubik;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.info__card--list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 28px;
+}
+
+.info__card--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.info__card--item-author,
+.info__card--item-published,
+.info__card--item-publishers,
+.info__card--item-categories,
+.info__card--item-pages {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(34, 37, 49, 1);
+}
+
+.info__card--item-authorName1,
+.info__card--item-authorName2,
+.info__card--item-year,
+.info__card--item-publishersName,
+.info__card--item-category,
+.info__card--item-page {
+    color: #0D75FF;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px 16px;
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+}
+
+.read__card {
+    background: #75828A;
+    border-radius: 4px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 38px;
+}
+
+.left__btn,
+.center__btn,
+.right__btn {
+    background-color: transparent;
+    padding: 10px 12px;
+    border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    cursor: pointer;
+}
